@@ -1,0 +1,132 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+    text-align: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+p{
+    color : hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    width: 1000px;
+    margin: auto;
+}
+
+.img {
+    background-image: url(images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+}
+
+.card_img {
+    width: 50%;
+    background-color: hsl(277, 93%, 23%);
+}
+
+.text{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 3rem 6rem 3rem 4rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.text>h1{
+    margin: 0 auto;
+}
+
+.text>h1>em{
+    color: hsl(277, 64%, 61%);
+    font-style: normal;
+}
+
+.text>p{
+    margin: 1.5rem auto;
+}
+
+.bottom-text{
+    display: flex;
+    flex-grow: 2;
+    margin-top: 3rem;
+}
+
+.bottom-text>div{
+    flex-grow: 1;
+    align-self: flex-end;
+}
+
+.bottom-text>div>h2{
+    margin: 0 auto;
+}
+
+.bottom-text>div>p{
+    margin: 0 auto;
+}
+
+@media screen and (max-width:375px) {
+
+    .main{
+        padding: 0;
+    }
+
+    .container{
+        flex-direction: column-reverse;
+        width: 340px;
+    }
+
+    .text{
+        width: 80%;
+        text-align: center;
+        padding: 0;
+        margin: 2rem auto;
+    }
+
+    h1{
+        font-size: 1.8rem;
+    }
+
+    .img {
+        background-image: url(images/image-header-mobile.jpg);
+        min-height: 200px;
+        width: 100%;
+    }
+
+    .card_img{
+        width: 100%;
+    }
+
+    .bottom-text{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+        align-items: center;
+        margin: 0;
+    }
+
+    .bottom-text>div{
+        margin: 1rem auto;
+    }
+    
+}
