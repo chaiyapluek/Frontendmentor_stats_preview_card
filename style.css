@@ -26,7 +26,8 @@ p{
     border-radius: 10px;
     overflow: hidden;
     display: flex;
-    width: 1000px;
+    width: 70%;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -85,7 +86,7 @@ p{
     margin: 0 auto;
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:800px) {
 
     .main{
         padding: 0;
